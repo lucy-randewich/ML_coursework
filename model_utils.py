@@ -8,7 +8,8 @@ def learning_curves(mod, X_train, y_train , cv=5):
     N , train_score, val_score = learning_curve(mod, X_train, y_train,  cv=5 , train_sizes=np.linspace(0.2 ,1.0, 5))
     plt.plot(N, train_score.mean(axis=1), label='Train')
     plt.plot(N, val_score.mean(axis=1), label='Validation')
-    plt.xlabel('train size')
+    plt.ylabel('Accuracy')
+    plt.xlabel('Train size')
     plt.legend()
     
 def preprocess_housing(x, y):
