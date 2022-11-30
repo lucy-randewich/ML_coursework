@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import zscore
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 
 def learning_curves(mod, X_train, y_train , cv=5):
     N , train_score, val_score = learning_curve(mod, X_train, y_train,  cv=5 , train_sizes=np.linspace(0.2 ,1.0, 5))
@@ -26,6 +27,8 @@ def preprocess_housing(x, y):
     rmv_high_vals_x = rmv_outlier_data_x[rmv_outlier_data_y != 5.00001]
     rmv_high_vals_y = rmv_outlier_data_y[rmv_outlier_data_y != 5.00001]
     print("Removed", rmv_outlier_data_x.shape[0] - rmv_high_vals_x.shape[0], "skewed rows")
-
-    X_train, X_test, y_train, y_test = train_test_split(rmv_high_vals_x, rmv_high_vals_y)
+    
+    scaler = StandardScaler()
+    scaled_data = scaler.fit_transform(rmv_high_vals_x)
+    X_train, X_test, y_train, y_test = train_test_split(scaled_data, rmv_high_vals_y)
     return X_train, X_test, y_train, y_test
