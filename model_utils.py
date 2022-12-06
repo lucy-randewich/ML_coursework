@@ -28,7 +28,8 @@ def preprocess_housing(x, y):
     rmv_high_vals_y = rmv_outlier_data_y[rmv_outlier_data_y != 5.00001]
     print("Removed", rmv_outlier_data_x.shape[0] - rmv_high_vals_x.shape[0], "skewed rows")
     
-    scaler = StandardScaler()
-    scaled_data = scaler.fit_transform(rmv_high_vals_x)
-    X_train, X_test, y_train, y_test = train_test_split(scaled_data, rmv_high_vals_y)
-    return X_train, X_test, y_train, y_test
+    x_means = rmv_high_vals_x.mean(axis=0)
+    x_std = rmv_high_vals_x.std(axis=0)
+    scaled_data = (rmv_high_vals_x - x_means) / x_std
+
+    return scaled_data, rmv_high_vals_y
