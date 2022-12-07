@@ -1,0 +1,88 @@
+
+digraph G {
+    splines=line;
+    nodesep=0.1;
+    ranksep=.22;
+    rankdir=LR;
+    margin=0.0;
+    
+    node [margin="0.03" penwidth="0.5" width=.1, height=.1];
+    edge [arrowsize=.4 penwidth="0.3"]
+
+    node97 [margin="0" shape=box penwidth=".5" color="#D67C03" style="dashed" label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/8g/b7_xy_gx7ysgvrt10qyzhv7c0000gn/T/node97_59881.svg"/></td>
+            </tr>
+            </table>>]
+	node89 [margin="0" shape=box penwidth=".5" color="#D67C03" style="dashed" label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/8g/b7_xy_gx7ysgvrt10qyzhv7c0000gn/T/node89_59881.svg"/></td>
+            </tr>
+            </table>>]
+	node88 [margin="0" shape=box penwidth=".5" color="#D67C03" style="dashed" label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/8g/b7_xy_gx7ysgvrt10qyzhv7c0000gn/T/node88_59881.svg"/></td>
+            </tr>
+            </table>>]
+	node60 [margin="0" shape=box penwidth=".5" color="#D67C03" style="dashed" label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/8g/b7_xy_gx7ysgvrt10qyzhv7c0000gn/T/node60_59881.svg"/></td>
+            </tr>
+            </table>>]
+	node2 [margin="0" shape=box penwidth=".5" color="#D67C03" style="dashed" label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/8g/b7_xy_gx7ysgvrt10qyzhv7c0000gn/T/node2_59881.svg"/></td>
+            </tr>
+            </table>>]
+	node1 [margin="0" shape=box penwidth=".5" color="#D67C03" style="dashed" label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/8g/b7_xy_gx7ysgvrt10qyzhv7c0000gn/T/node1_59881.svg"/></td>
+            </tr>
+            </table>>]
+	node0 [margin="0" shape=box penwidth=".5" color="#D67C03" style="dashed" label=<<table border="0">
+            
+            <tr>
+                    <td><img src="/var/folders/8g/b7_xy_gx7ysgvrt10qyzhv7c0000gn/T/node0_59881.svg"/></td>
+            </tr>
+            </table>>]
+    node97 -> leaf98 [penwidth=1.2 color="#D67C03" label=<>]
+	node89 -> node97 [penwidth=1.2 color="#D67C03" label=<>]
+	node88 -> node89 [penwidth=1.2 color="#D67C03" label=<>]
+	node60 -> node88 [penwidth=1.2 color="#D67C03" label=<>]
+	node2 -> node60 [penwidth=1.2 color="#D67C03" label=<>]
+	node1 -> node2 [penwidth=1.2 color="#D67C03" label=<>]
+	node0 -> node1 [penwidth=1.2 color="#D67C03" label=<>]
+    leaf98 [margin="0" shape=box penwidth=".5" color="#D67C03" style="dashed" label=<<table border="0">
+        
+        <tr>
+                <td><img src="/var/folders/8g/b7_xy_gx7ysgvrt10qyzhv7c0000gn/T/leaf98_59881.svg"/></td>
+        </tr>
+        </table>>]
+
+    
+    
+            subgraph cluster_instance {
+                style=invis;
+                X_y [penwidth="0.3" margin="0" shape=box margin="0.03" width=.1, height=.1 label=<
+                
+                <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#D67C03" point-size="11">MedInc</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#444443" point-size="11">HouseAge</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#D67C03" point-size="11">AveRooms</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#444443" point-size="11">AveBedrms</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#D67C03" point-size="11">Population</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#D67C03" point-size="11">AveOccup</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#444443" point-size="11">Latitude</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#444443" point-size="11">Longitude</font></td>
+                </tr>
+                <tr>
+                    <td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#D67C03" point-size="11">-0.84</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#444443" point-size="11">-0.22</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#D67C03" point-size="11">0.65</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#444443" point-size="11">-0.50</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#D67C03" point-size="11">-1.65</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#D67C03" point-size="11">-1.50</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#444443" point-size="11">0.10</font></td><td cellpadding="1" align="right" bgcolor="white"><font face="Helvetica" color="#444443" point-size="11">-0.27</font></td>
+                </tr>
+                </table>
+                
+                >]
+            }
+            leaf98 -> X_y [dir=back; penwidth="1.2" color="#D67C03" label=<<font face="Helvetica" color="#444443" point-size="11"> &#160;Prediction<br/> 4.75</font>>]
+            
+}
+    
